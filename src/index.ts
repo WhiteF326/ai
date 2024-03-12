@@ -54,7 +54,7 @@ process.on('uncaughtException', err => {
 });
 
 promiseRetry(retry => {
-	log(config);
+	log(JSON.stringify(config));
 	log(`Account fetching... ${chalk.gray(config.host)}`);
 
 	// アカウントをフェッチ
